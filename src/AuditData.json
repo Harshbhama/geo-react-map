@@ -1,0 +1,132 @@
+{
+    "txId": "80bdacc14246323a630baa4fc88095efc6d451db695405a365511323649d29eb",
+    "value": {
+      "asset_id": "5767c616-75ad-11e9-b58c-54ee751e298c",
+      "docType": "Shipment",
+      "shipment": [
+        {
+          "asset_id": "5767c616-75ad-11e9-b58c-54ee751e298c",
+          "buyer_company_bu_name": "",
+          "buyer_company_name": "Birla Cellulose",
+          "buyer_company_type_name": "Birla Cellulose",
+          "field1": "",
+          "field10": "",
+          "field2": "",
+          "field3": "",
+          "field4": "",
+          "field5": "",
+          "field6": "",
+          "field7": "",
+          "field8": "",
+          "field9": "",
+          "invoice_date": "2019-04-17T23:57:57.000Z",
+          "invoice_number": "INV-20110",
+          "order_id": 0,
+          "order_number": "",
+          "owner": "bc@bc.com",
+          "lat": 28.6139,
+          "lng": 77.2090,
+          "product": [
+            {
+              "product_description": "",
+              "product_id": 369,
+              "product_name": "Pulp-Product-1",
+              "product_qty": 1200,
+              "product_uom": "kg"
+            }
+          ],
+          "seller_company_bu_name": "",
+          "seller_company_name": "Pulp & Forest",
+          "seller_company_type_name": "Pulp & Forest",
+          "shipment_date": "2019-04-17T23:57:57.000Z",
+          "shipment_description": "",
+          "shipment_id": 320,
+          "shipment_transport_mode": "Rail Transport",
+          "status": ""
+        },
+        {
+          "asset_id": "5767c616-75ad-11e9-b58c-54ee751e298c",
+          "buyer_company_bu_name": "WH - Pallavaa",
+          "buyer_company_name": "Pallavaa",
+          "buyer_company_type_name": "Spinner",
+          "field1": "",
+          "field10": "",
+          "field2": "",
+          "field3": "",
+          "field4": "",
+          "field5": "",
+          "field6": "",
+          "field7": "",
+          "field8": "",
+          "field9": "",
+          "invoice_date": "2019-04-01T00:00:00.000Z",
+          "invoice_number": "blending -6",
+          "order_id": 406,
+          "order_number": "Blending - 5",
+          "owner": "bc@bc.com",
+          "lat": 12.9716,
+          "lng": 77.5946,
+          "product": [
+            {
+              "product_description": "",
+              "product_id": 285,
+              "product_name": "VISCOSE STAPLE FIBRE 1.2X38-GR. SILK FSC",
+              "product_qty": 12467,
+              "product_uom": "kg"
+            }
+          ],
+          "seller_company_bu_name": "WH - Birla Cellulose",
+          "seller_company_name": "Birla Cellulose",
+          "seller_company_type_name": "Birla Cellulose",
+          "shipment_date": "2019-04-02T01:34:25.000Z",
+          "shipment_description": "",
+          "shipment_id": 162,
+          "shipment_transport_mode": "Air Transport",
+          "status": ""
+        },
+        {
+          "asset_id": "5767c616-75ad-11e9-b58c-54ee751e298c",
+          "buyer_company_bu_name": "WH - VSM",
+          "buyer_company_name": "VSM",
+          "buyer_company_type_name": "Grey Fabric Manufacturer",
+          "field1": "",
+          "field10": "",
+          "field2": "",
+          "field3": "",
+          "field4": "",
+          "field5": "",
+          "field6": "",
+          "field7": "",
+          "field8": "",
+          "field9": "",
+          "invoice_date": "2019-04-01T00:00:00.000Z",
+          "invoice_number": "blending -7",
+          "order_id": 405,
+          "order_number": "Blending -4",
+          "owner": "spg@spg.com",
+          "lat": 23.0225,
+          "lng": 72.5714,
+          "product": [
+            {
+              "product_description": "",
+              "product_id": 233,
+              "product_name": "30s Viscose High Twist",
+              "product_qty": 13082,
+              "product_uom": "kg"
+            }
+          ],
+          "seller_company_bu_name": "WH - Pallavaa",
+          "seller_company_name": "Pallavaa",
+          "seller_company_type_name": "Spinner",
+          "shipment_date": "2019-04-02T01:38:30.000Z",
+          "shipment_description": "",
+          "shipment_id": 163,
+          "shipment_transport_mode": "Road Transport",
+          "status": ""
+        }
+        
+        
+      ],
+      "tx_id": "80bdacc14246323a630baa4fc88095efc6d451db695405a365511323649d29eb"
+    }
+  }
