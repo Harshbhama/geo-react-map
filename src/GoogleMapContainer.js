@@ -19,7 +19,7 @@ class GoogleMapsContainer extends React.Component {
       // ],
       address: ''
     }
-    Geocode.setApiKey("AIzaSyDa8IbCs7c-NM1Yw0eoXAqvxFJ27aQ6s58");
+    Geocode.setApiKey("xxx");
 
     // binding this to event-handler functions
     this.onMarkerClick = this.onMarkerClick.bind(this);
@@ -108,5 +108,5 @@ class GoogleMapsContainer extends React.Component {
   }
 }
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyDa8IbCs7c-NM1Yw0eoXAqvxFJ27aQ6s58'
+  apiKey: 'xxx'
 })(GoogleMapsContainer)
