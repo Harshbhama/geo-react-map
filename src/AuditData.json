@@ -35,6 +35,10 @@
             "product_uom": "kg"
           }
         ],
+        "marker": [
+          {"lat": 28.7041,"lng": 77.1025}, 
+          {"lat": 28.7306, "lng": 77.7759 }
+        ],
         "seller_company_bu_name": "",
         "seller_company_name": "Pulp & Forest",
         "seller_company_type_name": "Pulp & Forest",
@@ -66,6 +70,11 @@
         "owner": "bc@bc.com",
         "lat": 28.7306,
         "lng": 77.7759,
+
+        "marker": [
+          {"lat": 28.4595,"lng": 77.0266},
+          { "lat": 28.4089, "lng": 77.3178 }
+        ],
         "product": [
           {
             "product_description": "",
@@ -75,6 +84,8 @@
             "product_uom": "kg"
           }
         ],
+
+
         "seller_company_bu_name": "WH - Birla Cellulose",
         "seller_company_name": "Birla Cellulose",
         "seller_company_type_name": "Birla Cellulose",
@@ -101,11 +112,15 @@
         "field9": "",
         "invoice_date": "2019-04-01T00:00:00.000Z",
         "invoice_number": "blending -7",
-        "order_id": 405,
+        "order_id": 405,  
         "order_number": "Blending -4",
         "owner": "spg@spg.com",
-        "lat": 28.4595,
+        "lat" : 28.4595, 
         "lng": 77.0266,
+        "marker":[
+            { "lat": 28.7306, "lng": 77.7759 }, 
+            { "lat": 28.4215, "lng": 78.0195 }
+          ],
         "product": [
           {
             "product_description": "",
@@ -144,8 +159,8 @@
         "order_id": 549,
         "order_number": "p2-6",
         "owner": "bc@bc.com",
-        "lat": 28.6692,
-        "lng": 77.4538,
+        "lat": 28.4089,
+        "lng": 77.3178,
         "product": [
           {
             "product_description": "",
@@ -184,8 +199,8 @@
         "order_id": 548,
         "order_number": "p2-5",
         "owner": "spg@spg.com",
-        "lat": 28.4089,
-        "lng": 77.3178,
+        "lat": 28.4215,
+        "lng": 78.0195,
         "product": [
           {
             "product_description": "",
@@ -206,6 +221,26 @@
       }
       
     ],
+    "demo_marker":[
+         [
+          { "lat": 28.7041, "lng": 77.1025 }, 
+          { "lat": 28.7306, "lng": 77.7759 }
+
+        ],
+        [
+          { "lat": 28.7041, "lng": 77.1025 }, 
+          { "lat": 28.4595, "lng": 77.0266 }
+        ],
+        [
+          { "lat": 28.7306, "lng": 77.7759 },
+          { "lat": 28.4089, "lng": 77.3178 }
+        ],
+        [
+          { "lat": 28.7306, "lng": 77.7759 }, 
+          { "lat": 28.4215, "lng": 78.0195 }
+        ]
+      ],
+
     "tx_id": "ede4e196595711f48edc0c5dfb296240ee32452944ada43c43079ada982d40b6"
   }
 }
