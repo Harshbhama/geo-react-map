@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import GoogleMapReact from 'google-map-react';
 import GoogleMapContainer from './GoogleMapContainer';
+import GoogleMapContainer1 from './GoogleMapContainer1';
+import ReactChart from './ReactChart'
+import LeafletMap from './LeafletMap'
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -40,7 +43,7 @@ class App extends Component {
     //   </div>
     // );
     return (
-      <GoogleMapContainer />
+      <LeafletMap />
     );
   }
 }

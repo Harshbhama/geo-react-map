@@ -2,10 +2,10 @@ import React from 'react';
 import { GoogleApiWrapper, InfoWindow, Map, Marker, Polyline } from 'google-maps-react';
 import Geocode from "react-geocode";
 import markers from './MarkerData'
-class GoogleMapsContainer extends React.Component {
+class GoogleMapsContainer1 extends React.Component {
   constructor(props) {
     super(props);
-    var data = require('./AuditData.json');
+    var data = require('./AuditData2.json');
     //console.log(data.value.shipment);
     this.state = {
       showingInfoWindow: false,
@@ -64,7 +64,9 @@ class GoogleMapsContainer extends React.Component {
         { lat: 28.6692, lng: 77.4538 }, //Ghaziabad
         { lat: 28.4089, lng: 77.3178 } // Faridabad
       ],
-      address: ''
+      address: '',
+      demoo: '',
+      newData: ''
     }
 
     let initData = {}
@@ -118,15 +120,18 @@ class GoogleMapsContainer extends React.Component {
     let initData = {}
     let newData = []
     let demoo = []
+    let test = []
+    let marker = []
     let i = 0;
     let j = 0;
+    let m = 0;
     let company;
     let k;
     this.state.data.value.shipment.forEach(function (a, index) {
       let array = { ...initData }
       let p = {}
       debugger
-      if (index + 2 < abc.state.data.value.shipment.length) {
+      if (index < abc.state.data.value.shipment.length) {
 
         // if (abc.state.data.value.shipment[index].seller_company_type_name === abc.state.data.value.shipment[index + 1].seller_company_type_name || abc.state.data.value.shipment[index].seller_company_type_name === abc.state.data.value.shipment[index + 2].seller_company_type_name) {
         //   array = { lat: abc.state.data.value.shipment[index - 1].lat, lng: abc.state.data.value.shipment[index - 1].lng }
@@ -149,7 +154,12 @@ class GoogleMapsContainer extends React.Component {
           demoo[j++] = fff
         })
 
+        test[m++] = [
+          { lat: a.sel_lat, lng: a.sel_lng },
+          { lat: a.buy_lat, lng: a.buy_lng }
+        ]
 
+        //console.log(test)
 
       }
       // array = { lat: abc.state.data.value.shipment[index].lat, lng: abc.state.data.value.shipment[index].lng }
@@ -158,8 +168,12 @@ class GoogleMapsContainer extends React.Component {
       // console.log(demoo)
     })
 
+    console.log(test)
     console.log(newData)
     console.log(demoo)
+    this.setState({
+      newData: test
+    })
     // while (newData.length) {
     //   demoo[j++] = newData.splice(0, 2)
     // }
@@ -205,10 +219,18 @@ class GoogleMapsContainer extends React.Component {
       'marginLeft': 'auto',
       'marginRight': 'auto'
     }
+    let test1 = []
+    let z = 0;
     const google = window.google;
     let bounds = new google.maps.LatLngBounds();
     console.log(this.state.demo_marker1)
     console.log(this.state.data.value.demo_marker)
+    this.state.newData.forEach((aaa, index) => {
+      aaa.forEach((bb, index) => {
+        test1[z++]=bb
+      })
+    })
+    console.log(test1)
     return (
       <Map
         item
@@ -219,7 +241,7 @@ class GoogleMapsContainer extends React.Component {
         zoom={10}
         initialCenter={{ lat: 28.6139, lng: 77.2090 }}
       >
-        {this.state.data.value.shipment.map(marker => (
+        {test1.map(marker => (
           <Marker
             onClick={this.onMarkerClick}
             title={'Changing Colors Garage'}
@@ -242,9 +264,9 @@ class GoogleMapsContainer extends React.Component {
         >
           {this.state.address}
         </InfoWindow>
-        {console.log(this.state.data.value.demo_marker)}
+        {console.log(this.state.address)}
 
-        {this.state.data.value.demo_marker.map((marker, index) => (
+        {this.state.newData.map((marker, index) => (
           <Polyline
             path={marker}
             geodesic={true}
@@ -286,4 +308,4 @@ class GoogleMapsContainer extends React.Component {
 }
 export default GoogleApiWrapper({
   apiKey: 'AIzaSyDa8IbCs7c-NM1Yw0eoXAqvxFJ27aQ6s58'
-})(GoogleMapsContainer)
+})(GoogleMapsContainer1)

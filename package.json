@@ -3,11 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "chart.js": "^2.9.2",
     "google-map-react": "^1.1.4",
     "google-maps-react": "^2.0.2",
+    "google-translate": "^2.3.0",
+    "leaflet": "^1.5.1",
     "react": "^16.8.6",
+    "react-chartjs-2": "^2.8.0",
     "react-dom": "^16.8.6",
     "react-geocode": "^0.1.2",
+    "react-google-charts": "^3.0.15",
+    "react-leaflet": "^2.5.0",
+    "react-leaflet-polyline": "^1.0.3",
     "react-scripts": "3.0.1"
   },
   "scripts": {
