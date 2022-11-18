@@ -15,7 +15,7 @@
     "react-google-charts": "^3.0.15",
     "react-leaflet": "^2.5.0",
     "react-leaflet-polyline": "^1.0.3",
-    "react-scripts": "3.0.1"
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
